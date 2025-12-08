@@ -104,7 +104,7 @@ def get_retriever(k=3):
     vs = load_vector_store()
     base_retriever = vs.as_retriever(
         search_type="similarity_score_threshold",
-        search_kwargs={"score_threshold": 0.35, "k": 2}
+        search_kwargs={"score_threshold": 0.35, "k": k}
     )
 
 
